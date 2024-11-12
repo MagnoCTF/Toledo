@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="computador.html">Computadores</a></li>
+                <li><a href="hardware.html">Hardware</a></li>
+                <li><a href="periferico.html">Periféricos</a></li>
+                <li><a href="monitores.html">Monitores</a></li>
+            </ul>
+            
+            <div class="logcar">
+                <a href="index.html"><img src="imagens/logo.png" width="40px" height="40px"></a>
+                <ul class="menu">
+                    <li><a id="log" href="login.html">Login</a></li>
+                </ul>
+                <a href="carrinho.html"><img id="carrinho" src="imagens/car2.png" onmouseover="cheio()" onmouseout="vazio()"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="principal">
+       
+        <div class="divprom">
+            <img class="imgprom" src="imagens/promocao.jpeg" width="900px" height="500px">
+        </div>
+        <section class="promocao">
+            <article class="produto">
+                <img class="imagen_produto" src="imagens/placa-de-video-rtx-4060.jpeg" alt="placa de placa-de-video-rtx-4060">
+                
+                <h3>Placa de Video rtx 4060</h3>
+                <br>
+                <p>R$ 1.948,99</p>
+                <br>
+                <button class="botao_comprar" onclick="produto2()">Comprar</button>
+                <br>
+            </article>
+
+            <article class="produto">
+                <img class="imagen_produto" src="imagens/memoria-rise-mode-z-16gb.jpeg" alt="memoria-rise-mode-z-16gb">
+                <hr>
+                <h3>Memória Rise 16gb</h3>
+                <br>
+                <p>R$ 329,90</p>
+                <br>
+                <button class="botao_comprar"onclick="produto1()">Comprar</button>
+                <br>
+            </article>
+
+            <article class="produto">
+                <img class="imagen_produto" src="imagens/headset-sem-fio-logitech.jpeg" alt="headset-sem-fio-logitech">
+                <hr>
+                <h3>Headset Logitech</h3>
+                <br>
+                <p>R$ 549,99</p>
+                <br>
+                <button class="botao_comprar" onclick="produto3()">Comprar</button>
+                <br>
+            </article>
+
+            <article class="produto">
+                <img class="imagen_produto" src="imagens/Notebook-Dell-I5-5th-8Gb-SSD-240Gb.jpeg" alt="Notebook-Dell-I5-5th-8Gb-SSD-240Gb">
+                <hr>
+                <h3>Notebook Dell 8Gb </h3>
+                <br>
+                <p>R$ 5.499,99</p>
+                <br>
+                <button class="botao_comprar" onclick="produto4()">Comprar</button>
+                <br>
+            </article>
+
+            
+
+            
+        </section>
+    </main>
+
+    <footer class="rodape">
+        <div class="divrod">Toledo</div>
+    </footer>
+    <script src="js.js"></script>
+</body>
+</html>

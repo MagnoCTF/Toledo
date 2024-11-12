@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="computador.html">Computadores</a></li>
+                <li><a href="hardware.html">Hardware</a></li>
+                <li><a href="periferico.html">Periféricos</a></li>
+                <li><a href="monitores.html">Monitores</a></li>
+            </ul>
+            
+            <div class="logcar">
+                <a href="index.html"><img src="imagens/logo.png" width="40px" height="40px"></a>
+                <ul class="menu">
+                    <li><a id="log"href="login.html">Login</a></li>
+                </ul>
+                <a href="carrinho.html"><img id="carrinho" src="imagens/car2.png" onmouseover="cheio()" onmouseout="vazio()"></a>
+            </div>
+        </nav>
+    </header>
+
+    <main class="principal">
+        <h1>Carrinho</h1>
+        <br>
+        <section class="corpo">
+
+            <article class="final">
+                <h1>Finalizar Compra</h1>
+                <h2>Total </h2>
+                <h2><span id="total"></span></h2>
+                <button class="botao_prod" onclick="limpar()">Finalizar</button><br>
+            </article>
+            
+
+
+            
+ 
+        </section>
+    </main>
+
+    
+    <script src="js.js"></script>
+</body>
+</html>

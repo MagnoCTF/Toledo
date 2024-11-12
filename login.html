@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="css.css">
+</head>
+<body>
+    <header class="cabecalho">
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="computador.html">Computadores</a></li>
+                <li><a href="hardware.html">Hardware</a></li>
+                <li><a href="periferico.html">Periféricos</a></li>
+                <li><a href="monitores.html">Monitores</a></li>
+            </ul>
+            
+            <div class="logcar">
+                <a href="index.html"><img src="imagens/logo.png" width="40px" height="40px"></a>
+                <a href="carrinho.html"><img id="carrinho" src="imagens/car2.png" onmouseover="cheio()" onmouseout="vazio()"></a>
+            </div>
+        </nav>
+    </header>
+    <main class="fundo">
+        <div class="campo_login">
+            <form class="formulario">
+                <h1>Login</h1><br>
+                <label for="txtemail">E-mail:</label>
+                <input type="email" placeholder="Digite seu e-mail..." id="txtemail">
+                <label for="txtsenha">Senha:</label>
+                <input type="password" placeholder="Digite sua senha..." id="txtsenha"><br>
+                <p id="msg"></p><br>
+                <button class="botao_prod" type="button" onclick="entrar()">Login</button><br>
+                <button class="botao_prod" type="button"onclick="abrircad()">Cadastrar</button><br>
+            </form>
+        </div>
+    </main>
+    <footer class="rodape">
+        <div class="divrod">Toledo</div>
+    </footer>
+    
+    <script src="js.js"></script>
+</body>
+</html>
